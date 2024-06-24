@@ -1,4 +1,5 @@
 ﻿using ES_G1.Models;
+using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace ES_G1
 {
@@ -13,6 +14,8 @@ namespace ES_G1
             new MenuModel {name="Margherita", price = 4.50m},
             new MenuModel {name="4 formaggi", price = 6.50m},
             new MenuModel {name="Pizza fritta", price = 5.50m}
+
         };
+
     }
 }
