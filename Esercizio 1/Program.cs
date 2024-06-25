@@ -10,6 +10,7 @@ namespace Esercizio_1
         private List<MenuModel> ordine = new List<MenuModel>();
         private decimal totale = 0;
 
+
         public void menu()
         {
             Console.WriteLine("Menu:\n");
