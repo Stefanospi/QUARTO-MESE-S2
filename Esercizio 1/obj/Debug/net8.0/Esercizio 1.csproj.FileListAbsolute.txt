@@ -1,0 +1,25 @@
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\ES-G1.deps.json
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\ES-G1.runtimeconfig.json
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\appsettings.Development.json
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\appsettings.json
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\ES-G1.staticwebassets.runtime.json
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\ES-G1.exe
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\Esercizio 1.exe
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\Esercizio 1.deps.json
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\Esercizio 1.runtimeconfig.json
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\Esercizio 1.dll
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\Esercizio 1.pdb
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\ES-G1.dll
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\bin\Debug\net8.0\ES-G1.pdb
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\Esercizio 1.csproj.AssemblyReference.cache
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\Esercizio 1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\Esercizio 1.AssemblyInfoInputs.cache
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\Esercizio 1.AssemblyInfo.cs
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\Esercizio 1.csproj.CoreCompileInputs.cache
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\Esercizio 1.sourcelink.json
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\Esercizi.D9499F93.Up2Date
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\Esercizio 1.dll
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\refint\Esercizio 1.dll
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\Esercizio 1.pdb
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\Esercizio 1.genruntimeconfig.cache
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\Esercizio 1\obj\Debug\net8.0\ref\Esercizio 1.dll

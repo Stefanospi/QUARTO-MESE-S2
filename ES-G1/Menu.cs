@@ -7,13 +7,13 @@ namespace ES_G1
     {
         public static List<MenuModel> MenuItems { get; } = new List<MenuModel>
         {
-            new MenuModel {name="Coca Cola", price = 2.50m},
-            new MenuModel {name="Pepsi", price = 2.50m},
-            new MenuModel {name="Sprite", price = 2.50m},
-            new MenuModel {name="Fanta", price = 2.50m},
-            new MenuModel {name="Margherita", price = 4.50m},
-            new MenuModel {name="4 formaggi", price = 6.50m},
-            new MenuModel {name="Pizza fritta", price = 5.50m}
+            new MenuModel {name="1. Coca Cola", price = 2.50m},
+            new MenuModel {name="2. Pepsi", price = 2.50m},
+            new MenuModel {name="3. Sprite", price = 2.50m},
+            new MenuModel {name="4. Fanta", price = 2.50m},
+            new MenuModel {name="5. Margherita", price = 4.50m},
+            new MenuModel {name="6. 4 formaggi", price = 6.50m},
+            new MenuModel {name="7. Pizza fritta", price = 5.50m}
 
         };
 
