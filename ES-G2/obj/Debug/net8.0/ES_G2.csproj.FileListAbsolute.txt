@@ -1,0 +1,12 @@
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\bin\Debug\net8.0\ES_G2.deps.json
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\bin\Debug\net8.0\ES_G2.dll
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\bin\Debug\net8.0\ES_G2.pdb
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\obj\Debug\net8.0\ES_G2.GeneratedMSBuildEditorConfig.editorconfig
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\obj\Debug\net8.0\ES_G2.AssemblyInfoInputs.cache
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\obj\Debug\net8.0\ES_G2.AssemblyInfo.cs
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\obj\Debug\net8.0\ES_G2.csproj.CoreCompileInputs.cache
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\obj\Debug\net8.0\ES_G2.sourcelink.json
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\obj\Debug\net8.0\ES_G2.dll
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\obj\Debug\net8.0\refint\ES_G2.dll
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\obj\Debug\net8.0\ES_G2.pdb
+D:\Epicode\QUARTO MESE\QUARTO-MESE-S2\ES-G2\obj\Debug\net8.0\ref\ES_G2.dll
