@@ -5,10 +5,12 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ES_G2", "ES_G2.csproj", "{20474E00-5428-4005-B949-5ED92C90C05C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ES-G2-CONSOLE", "..\ES-G2-CONSOLE\ES-G2-CONSOLE.csproj", "{54C181B5-BEF4-45B5-A84C-ED8CB6A980B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ES-G2-CONSOLE", "..\ES-G2-CONSOLE\ES-G2-CONSOLE.csproj", "{54C181B5-BEF4-45B5-A84C-ED8CB6A980B5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{20474E00-5428-4005-B949-5ED92C90C05C} = {20474E00-5428-4005-B949-5ED92C90C05C}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ES-G2-WEB", "..\ES-G2-WEB\ES-G2-WEB.csproj", "{FD8A0C4D-1EEE-43EA-B7DD-07DF08D7CB17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 		{54C181B5-BEF4-45B5-A84C-ED8CB6A980B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{54C181B5-BEF4-45B5-A84C-ED8CB6A980B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{54C181B5-BEF4-45B5-A84C-ED8CB6A980B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD8A0C4D-1EEE-43EA-B7DD-07DF08D7CB17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD8A0C4D-1EEE-43EA-B7DD-07DF08D7CB17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD8A0C4D-1EEE-43EA-B7DD-07DF08D7CB17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD8A0C4D-1EEE-43EA-B7DD-07DF08D7CB17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
