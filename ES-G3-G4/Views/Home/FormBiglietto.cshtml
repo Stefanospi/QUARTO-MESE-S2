@@ -1,0 +1,57 @@
+﻿@model ES_G3_G4.Models.AcquistoDati
+@using ES_G3_G4.Class
+
+
+@{
+    ViewData["Title"] = "FormBiglietto";
+}
+
+<h1>Acquisto Biglietto</h1>
+
+<h4>AcquistoDati</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="FormBiglietto">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="surname" class="control-label"></label>
+                <input asp-for="surname" class="form-control" />
+                <span asp-validation-for="surname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="tipoBiglietto" class="control-label"></label>
+                <select asp-for="tipoBiglietto" class="form-select">
+                    <option value="@((int)Biglietto.TipoBiglietto.Ridotto)">Ridotto</option>
+                    <option value="@((int)Biglietto.TipoBiglietto.Intero)">Intero</option>
+                </select>
+            </div>
+            <div class="form-group mb-4">
+                <label asp-for="Sale" class="control-label"></label>
+                <select asp-for="Sale" class="form-select">
+                    <option value="@((int)Sala.name.NORD)">NORD</option>
+                    <option value="@((int)Sala.name.SUD)">SUD</option>
+                    <option value="@((int)Sala.name.EST)">EST</option>
+                    <option value="@((int)Sala.name.OVEST)">OVEST</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

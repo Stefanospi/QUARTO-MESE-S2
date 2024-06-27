@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ES-G3-G4.props" />
+</Project>
