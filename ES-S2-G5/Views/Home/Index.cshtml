@@ -43,6 +43,10 @@
                 <input type="hidden" name="id" value="@item.Id" />
                 <button class="btn btn-danger mt-2" type="submit">Cancella</button>
             </form>
+                    <form asp-controller="Home" asp-action="Dettagli">
+                        <input type="hidden" name="id" value="@item.Id" />
+                        <button class="btn btn-danger mt-2" type="submit">Dettagli</button>
+                    </form>
                 </td>
             </tr>
         }
