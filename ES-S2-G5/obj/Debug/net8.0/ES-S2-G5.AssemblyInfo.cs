@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ES-S2-G5")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dbf50bd9bf79bbf736d1e22960950b225d2129b6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4c6450b93013302d8652bbac6e9ed3aeb3bba994")]
 [assembly: System.Reflection.AssemblyProductAttribute("ES-S2-G5")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ES-S2-G5")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

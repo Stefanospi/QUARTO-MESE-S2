@@ -19,7 +19,8 @@ namespace ES_S2_G5.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var articles = _articleService.GetArticles();
+            return View(articles);
         }
 
         public IActionResult Privacy()
@@ -35,7 +36,7 @@ namespace ES_S2_G5.Controllers
         public IActionResult Write(Article article)
         {
             _articleService.CreateArticle(article);
-            return RedirectToAction("Dettagli");
+            return RedirectToAction("Index");
         }
         public IActionResult Delete(Article article)
         {
