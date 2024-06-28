@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "BqpQ4/s0KTSlZ5hUMS5dAM6PaBU5EDy5xkObxQbBaqw=",
+  "Hash": "OIND4NM1NTLUaBaLVrUegrqpX2vSoKvtCFa25ltRvi8=",
   "Source": "ES-S2-G5",
   "BasePath": "_content/ES-S2-G5",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-S2\\ES-S2-G5\\wwwroot\\images\\Jordan 4.jpg",
+      "SourceId": "ES-S2-G5",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-S2\\ES-S2-G5\\wwwroot\\",
+      "BasePath": "_content/ES-S2-G5",
+      "RelativePath": "images/Jordan 4.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Jordan 4.jpg"
     },
     {
       "Identity": "D:\\Epicode\\QUARTO MESE\\QUARTO-MESE-S2\\ES-S2-G5\\wwwroot\\js\\site.js",

@@ -42,9 +42,7 @@ namespace ES_S2_G5.Service
         // Metodo per ottenere un articolo dato l'ID
         public Article GetById(int id)
         {
-            // Cerca l'articolo nella lista tramite l'ID
-            var article = articles.Single(x => x.Id == id);
-            return article;
+            return articles.SingleOrDefault(a => a.Id == id);
         }
     }
 }

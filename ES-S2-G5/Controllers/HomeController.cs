@@ -10,13 +10,11 @@ namespace ES_S2_G5.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IArticleService<Article> _articleService;
-        private readonly IWebHostEnvironment _env;
 
-        public HomeController(ILogger<HomeController> logger, IArticleService<Article> articleService, IWebHostEnvironment env)
+        public HomeController(ILogger<HomeController> logger, IArticleService<Article> articleService)
         {
             _logger = logger;
             _articleService = articleService;
-            _env = env;
         }
 
         public IActionResult Index()
@@ -36,48 +34,8 @@ namespace ES_S2_G5.Controllers
         [HttpPost]
         public IActionResult Write(Article article)
         {
-            if (ModelState.IsValid) 
-            {
-                var art = new Article
-                {
-                    Description = article.Description,
-                    Name = article.Name,
-                    Price = article.Price,
-                    CoverImg = article.CoverImg,
-                    ImgProduct = article.ImgProduct,
-                    ImgProduct2 = article.ImgProduct2
-                };
-                _articleService.CreateArticle(art);
-                string uploads = Path.Combine(_env.WebRootPath, "immagini");
-                if (article.CoverImg != null)
-                {
-                    string filePath = Path.ChangeExtension(Path.Combine(uploads, article.Id.ToString()), "jpg");
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        article.CoverImg.CopyTo(fileStream);
-                    }
-                }
-                if (article.ImgProduct != null)
-                {
-                    string filePath = Path.ChangeExtension(Path.Combine(uploads, article.Id.ToString() + "1"), "jpg");
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        article.ImgProduct.CopyTo(fileStream);
-                    }
-                }
-                if (article.ImgProduct2 != null)
-                {
-                    string filePath = Path.ChangeExtension(Path.Combine(uploads, article.Id.ToString() + "2"), "jpg");
-                    using (var fileStream = new FileStream(filePath, FileMode.Create))
-                    {
-                        article.ImgProduct2.CopyTo(fileStream);
-                    }
-                }
-                return RedirectToAction(nameof(Dettagli));
-            }
-            return View(article);
-            
-            
+            _articleService.CreateArticle(article);
+            return RedirectToAction("Dettagli");
         }
         public IActionResult Delete(Article article)
         {

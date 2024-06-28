@@ -11,4 +11,8 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\images\Jordan 4.jpg" />
+  </ItemGroup>
+
 </Project>

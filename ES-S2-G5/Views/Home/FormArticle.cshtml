@@ -4,45 +4,45 @@
     ViewData["Title"] = "FormArticle";
 }
 
-<h1>FormArticle</h1>
+<h1 class="fst-italic">Crea L'articolo</h1>
 
-<h4>Article</h4>
+<h4 class="text-center fst-italic">Article</h4>
 <hr />
-<div class="row">
+<div class="row justify-content-center">
     <div class="col-md-4">
         <form asp-action="FormArticle">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="Name" class="control-label">Inserisci il nome</label>
                 <input asp-for="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="Price" class="control-label">Inserisci il prezzo</label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
+            <div class="form-group mb-2">
+                <label asp-for="Description" class="control-label">Inserisci una descrizione del prodotto</label>
+                <input type="textarea" asp-for="Description" class="form-control" />
                 <span asp-validation-for="Description" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="CoverImg" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="CoverImg" class="control-label">Inserisci immagine di copertina</label>
                 <input asp-for="CoverImg" class="form-control" />
                 <span asp-validation-for="CoverImg" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="ImgProduct" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="ImgProduct" class="control-label">Inserisci una immagine del prodotto</label>
                 <input asp-for="ImgProduct" class="form-control" />
             </div>
 
-            <div class="form-group">
-                <label asp-for="ImgProduct2" class="control-label"></label>
+            <div class="form-group mb-2">
+                <label asp-for="ImgProduct2" class="control-label">Inserisci un'altra immagine del prodotto</label>
                 <input asp-for="ImgProduct2" class="form-control" />
             </div>
 
-            <div class="form-group">
+            <div class="form-group mb-2">
                 <input type="submit" class="btn btn-primary mt-2" asp-action="Write" />
             </div>
         </form>
