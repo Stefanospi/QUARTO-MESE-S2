@@ -26,7 +26,6 @@ namespace ES_G3_G4.Controllers
         public IActionResult FormBiglietto()
         {
 
-
             return View();
 
         }
