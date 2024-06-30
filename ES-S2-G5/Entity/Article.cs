@@ -16,10 +16,7 @@ namespace ES_S2_G5.Entity
 
         [Required(ErrorMessage = "Devi caricare necessariamente l'immagine dell'articolo è obbligatorio.")]
         public IFormFile CoverImg { get; set; }
-        public IFormFile ImgProduct { get; set; }
-        public IFormFile ImgProduct2 { get; set; }
 
-        public bool IsCreated { get; set; }
 
     }
 }

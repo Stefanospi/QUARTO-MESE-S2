@@ -4,17 +4,21 @@ using ES_S2_G5.Service;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
+
 namespace ES_S2_G5.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IArticleService<Article> _articleService;
+        private readonly IWebHostEnvironment _env;
 
-        public HomeController(ILogger<HomeController> logger, IArticleService<Article> articleService)
+
+        public HomeController(ILogger<HomeController> logger, IArticleService<Article> articleService,IWebHostEnvironment env)
         {
             _logger = logger;
             _articleService = articleService;
+            _env = env;
         }
 
         public IActionResult Index()
@@ -33,11 +37,36 @@ namespace ES_S2_G5.Controllers
         }
 
         [HttpPost]
-        public IActionResult Write(Article article)
+        public IActionResult FormArticle(Article article)
         {
-            _articleService.CreateArticle(article);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                var a = new Article
+                {
+                    Name = article.Name,
+                    Price = article.Price,
+                    Description = article.Description,
+                    CoverImg = article.CoverImg,
+
+                };
+                _articleService.CreateArticle(article);
+                string uploads = Path.Combine(_env.WebRootPath, "images");
+
+                if(article.CoverImg != null)
+                {
+                    string FilePath = Path.ChangeExtension(Path.Combine(uploads, article.Id.ToString()), "jpg");
+                    using (var FileStream = new FileStream(FilePath, FileMode.Create))
+                    {
+                        article.CoverImg.CopyTo(FileStream);
+                    }
+                }
+
+                return RedirectToAction("Index");
+            }
+            return View(article);
+   
         }
+
         public IActionResult Delete(Article article)
         {
             _articleService.DeleteArticle(article.Id);

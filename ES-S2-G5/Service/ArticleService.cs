@@ -16,7 +16,6 @@ namespace ES_S2_G5.Service
             // Assegna un nuovo ID all'articolo
             article.Id = lastid++;
             // Imposta il flag IsCreated a true
-            article.IsCreated = true;
             // Aggiunge l'articolo alla lista
             articles.Add(article);
         }

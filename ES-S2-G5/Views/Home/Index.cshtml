@@ -4,23 +4,27 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Articoli</h1>
+<h1 class="text-white fst-italic">Articoli</h1>
 
 <p>
-    <a asp-action="FormArticle">Create New</a>
+    <a asp-action="FormArticle" class="btn btn-outline-light">Create New</a>
 </p>
 <table class="table">
     <thead>
         <tr>
-            <th>
+            <th class="fst-italic text-white">
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <th>
+            <th class="fst-italic text-white">
                 @Html.DisplayNameFor(model => model.Price)
             </th>
-            <th>
+            <th class="fst-italic text-white">
                 @Html.DisplayNameFor(model => model.Description)
             </th>
+            <th class="fst-italic text-white">
+                Copertina
+            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -28,25 +32,36 @@
         @foreach (var item in Model)
         {
             <tr>
-                <td>
+                <td class="text-white">
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
-                <td>
+                <td class="text-white">
                     @Html.DisplayFor(modelItem => item.Price)
                 </td>
-                <td>
+                <td class="text-white">
                     @Html.DisplayFor(modelItem => item.Description)
                 </td>
+                <td>
+                    @if(item.CoverImg == null)
+                    {
+                        <img src="~/images/Jordan 4.jpg" alt="No Image" style="width: 100px; height: 100px;" />
+                    }
+                    else
+                    {
+                        string ImgPath = $"~/images/{item.Id}.jpg";
+                        <img src="@Url.Content(ImgPath)" alt="Immagine Copertina" style="max-width: 100px; max-height: 100px;" />
+                    }
+                </td>
            
-            <td>
-            <form asp-controller="Home" asp-action="Delete">
-                <input type="hidden" name="id" value="@item.Id" />
-                <button class="btn btn-danger mt-2" type="submit">Cancella</button>
-            </form>
-                    <form asp-controller="Home" asp-action="Dettagli">
-                        <input type="hidden" name="id" value="@item.Id" />
-                        <button class="btn btn-danger mt-2" type="submit">Dettagli</button>
-                    </form>
+            <td class="d-flex gap-3 text-white border border-light">
+                <form asp-controller="Home" asp-action="Delete">
+                    <input type="hidden" name="id" value="@item.Id" />
+                    <button class="btn btn-outline-danger" type="submit">Cancella</button>
+                </form>
+                <form asp-controller="Home" asp-action="Dettagli">
+                    <input type="hidden" name="id" value="@item.Id" />
+                    <button class="btn btn-outline-warning" type="submit">Dettagli</button>
+                </form>
                 </td>
             </tr>
         }
